@@ -7,7 +7,7 @@ import { useReducer } from "react"
 //     const increment = () => {
 //          setCount(count + 1); też zadziała, ale nie jest poprawnym zapisem
 //         setCount((prevCount) => prevCount + 1)
-//         // setCount(count + 1); - jeśli wywołamy dwa razy w taki sposób, to nie zadziała prawidłowo
+//          setCount(count + 1); - jeśli wywołamy dwa razy w taki sposób, to nie zadziała prawidłowo
 //     }
 
 //     const decrement = () => {
@@ -44,28 +44,28 @@ function reducer(state, action) {
     state = { count: 0 }
     */}
 
-export const PlusMinus = () => {
+// export const PlusMinus = () => {
 
-    // const [count, setCount] = useState(0);
+//     // const [count, setCount] = useState(0);
 
-    const [state, dispatch] = useReducer(reducer, { count: 0 }) // useReducer przyjmuje dwa argumenty
+//     const [state, dispatch] = useReducer(reducer, { count: 0 }) // useReducer przyjmuje dwa argumenty
 
-    const increment = () => {
-        // setCount((prevCount) => prevCount + 1)
-        dispatch({ type: ACTIONS.INCREMENT })
-    }
+//     const increment = () => {
+//         // setCount((prevCount) => prevCount + 1)
+//         dispatch({ type: ACTIONS.INCREMENT })
+//     }
 
-    const decrement = () => {
-        // setCount((prevCount) => prevCount - 1)
-        dispatch({ type: ACTIONS.DECREMENT })
+//     const decrement = () => {
+//         // setCount((prevCount) => prevCount - 1)
+//         dispatch({ type: ACTIONS.DECREMENT })
 
-    }
+//     }
 
-    return (
-        <div className="plusMinus">
-            <button onClick={decrement}>-</button>
-            <h2>{state.count}</h2>
-            <button onClick={increment}>+</button>
-        </div>
-    )
-}
+//     return (
+//         <div className="plusMinus">
+//             <button onClick={decrement}>-</button>
+//             <h2>{state.count}</h2>
+//             <button onClick={increment}>+</button>
+//         </div>
+//     )
+// }

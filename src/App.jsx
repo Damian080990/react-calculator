@@ -3,7 +3,7 @@ import './styles.css';
 import DigitButton from './DigitButton';
 import OperationButton from './OperationButton';
 import { ACTIONS, evaluate, OPERATIONS, formatOperand } from './helpers';
-import { Todos } from './Todos';
+// import { Todos } from './Todos';
 // import { PlusMinus } from './PlusMinus';
 
 function reducer(state, { type, payload }) {
@@ -143,7 +143,7 @@ function App() {
         <button className="span-two" onClick={() => dispatch({ type: ACTIONS.EVALUATE })}>=</button>
       </div>
       {/* <PlusMinus /> */}
-      <Todos />
+      {/* <Todos /> */}
     </>
   );
 }
